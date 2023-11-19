@@ -93,3 +93,22 @@ hết còn không làm
   // Các khối lệnh của bạn nếu dieukien1, dieukien2 là sai ở đây
 hết
 ```
+
+Ta kiểm tra điều kiện bằng các dấu `==`, `!=`, `>`, `<`, `<=`, `>=`
+```js
+a == b  sẽ trả về đúng khi a bằng b
+a != b  sẽ trả về đúng khi a không bằng b
+a > b  sẽ trả về đúng khi a lớn hơn b
+a < b  sẽ trả về đúng khi a nhỏ hơn b
+a >= b  sẽ trả về đúng khi a lớn hơn hoặc bằng b
+a <= b  sẽ trả về đúng khi a nhỏ hơn hoặc bằng b
+```
+
+Khi kiểm tra các điều kiện, ta có thể dùng cú pháp `và`, `hoặc`, `đúng`, `sai`
+
+```js
+đặt a = đúng, b = sai
+
+viết (a == đúng và b == đúng) // sẽ in sai
+viết (a == đúng hoặc b == đúng) // sẽ in đúng
+```
