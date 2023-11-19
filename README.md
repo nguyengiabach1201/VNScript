@@ -113,6 +113,25 @@ hết còn không làm
 hết
 ```
 
+`Khối lệnh chuyển:` Thay cho việc sử dụng nhiều cú pháp `nếu-thì`, ta có thể sử dụng cú pháp `chuyển`, 'trường hợp', 'mặc định'
+
+```js
+đặt chuỗi = 'hi'
+
+chuyển chuỗi làm
+  // Nếu chuỗi bằng 'hi' thì viết `chào` rồi thoát khỏi cú pháp `chuyển`
+  trường hợp 'hi':
+    viết('chào')
+    thoát
+  // Nếu chuỗi bằng 'bye' thì viết `tạm biệt` rồi thoát khỏi cú pháp `chuyển`
+  trường hợp 'bye':
+    viết('tạm biệt')
+    thoát
+  // Nếu chuỗi không bằng 'hi' mà cũng không bằng 'bye' thì thoát khỏi cú pháp chuyển
+  mặc định: thoát
+hết
+```
+
 `Khối lệnh lặp:` Ta có thể dùng các cú pháp `với` hoặc `khi` để biểu diễn khối lệnh lặp
 
 ```js
