@@ -116,5 +116,15 @@ hết
 `Khối lệnh lặp:` Ta có thể dùng các cú pháp `với` hoặc `khi` để biểu diễn khối lệnh lặp
 
 ```js
+// Khối lệnh này sẽ in ra các giá trị từ 0 đến 9
+với i = 0; i < 10; i = i + 1 làm
+  viết (i)
+hết
 
+//Khối lệnh này sẽ in ra các giá trị từ 5 đến 7
+đặt a = 5
+khi a != 10 làm
+  viết(a)
+  a = a + 1
+hết
 ```
