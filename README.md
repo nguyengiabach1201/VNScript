@@ -19,7 +19,7 @@ VNScript có thể được sử dụng để phát triển nhiều loại ứng
 ## Hướng dẫn sử dụng
 VNScript hỗ trợ nhiều tính năng vô cùng đồ sộ và sau đây là cú pháp, cách sử dụng VNScript:
 
-`Lệnh khởi tạo:` Để khởi tạo một biến, ta dùng cú pháp `đặt`. Còn để khởi tạo một loại thuật toán, ta dùng cú pháp `thuật toán`, `hết`
+`Lệnh khởi tạo:` Để khởi tạo một biến, ta dùng cú pháp `đặt`. Còn để khởi tạo một loại thuật toán, ta dùng cú pháp `thuật toán`
 
 ```js
 // Khởi tạo các biến a, b, c
@@ -68,7 +68,7 @@ viết (a) // Câu lệnh này sẽ viết `Chào bạn!` ra màn hình
 bạn sẽ nhập giá trị b vào máy tính bằng bàn phím
 ```
 
-`Khối lệnh điều kiện:` Để biểu diễn cấu trúc nếu-thì trong VNScript, ta dùng cú pháp `nếu`,`còn không`,`làm`,`hết`
+`Khối lệnh điều kiện:` Để biểu diễn cấu trúc nếu-thì trong VNScript, ta dùng cú pháp `nếu`,`còn không`
 
 Ta kiểm tra điều kiện bằng các dấu `==`, `!=`, `>`, `<`, `<=`, `>=`
 ```js
@@ -113,4 +113,8 @@ hết còn không làm
 hết
 ```
 
+`Khối lệnh lặp:` Ta có thể dùng các cú pháp `với` hoặc `khi` để biểu diễn khối lệnh lặp
 
+```js
+
+```
