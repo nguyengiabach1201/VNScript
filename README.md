@@ -19,6 +19,12 @@ VNScript có thể được sử dụng để phát triển nhiều loại ứng
 ## Hướng dẫn sử dụng
 VNScript hỗ trợ nhiều tính năng vô cùng đồ sộ và sau đây là cú pháp, cách sử dụng VNScript:
 
-```
+`Khối lệnh điều kiện:` Để biểu diễn cấu trúc nếu-thì trong VNScript, ta dùng cú pháp `nếu`,`còn không`,`làm`,`hết`
 
+Sau đây là một ví dụ cho việc sử dụng khối lệnh điều kiện
+```js
+// Khối lệnh `nếu` đơn giản
+nếu dieukien1 làm
+
+hết
 ```
