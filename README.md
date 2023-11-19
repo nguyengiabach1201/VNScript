@@ -15,3 +15,10 @@ VNScript có thể được sử dụng để phát triển nhiều loại ứng
 - **Ứng dụng web:** VNScript có thể được sử dụng để phát triển các ứng dụng web tương tác, chẳng hạn như trò chơi, ứng dụng quản lý và ứng dụng thương mại điện tử.
 - **Ứng dụng di động:** VNScript có thể được sử dụng để phát triển các ứng dụng di động cho các nền tảng Android và iOS khi đi kèm với framework React Native.
 - **Ứng dụng máy tính:** VNScript, kết hợp với React, VueJs, Astro, ... có thể được sử dụng để phát triển các ứng dụng máy tính cho các hệ điều hành Windows, macOS và Linux.
+
+## Hướng dẫn sử dụng
+VNScript hỗ trợ nhiều tính năng vô cùng đồ sộ và sau đây là cú pháp, cách sử dụng VNScript:
+
+```
+
+```
