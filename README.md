@@ -27,9 +27,35 @@ VNScript hỗ trợ nhiều tính năng vô cùng đồ sộ và sau đây là c
 đặt b = "Xin chào!"
 đặt c = sai
 
-thuật toán hello
+// Khởi tạo thuật toán `hello` không có bất kì hàm số nào
+thuật toán hello 
   Các khối lệnh của bạn dành cho thuật toán `hello` ở đây
 hết
+
+// Khởi tạo thuật toán `byebye` có các hàm số
+thuật toán byebye (hàm số 1, hàm số 2,...) 
+  Các khối lệnh của bạn dành cho thuật toán `hello` ở đây
+hết
+```
+
+Để gọi một thuật toán, ta dùng cấu trúc `tên thuật toán + (các tham số nếu có)`
+```js
+đặt b = 0
+thuật toán a
+  b = 5
+hết
+
+a() // lúc này, b = 5
+```
+
+Trong một thuật toán, để trả về giá trị từ một thuật toán, ta dùng lệnh `trả về`
+
+```js
+thuật toán trave5
+  trả về 5
+hết
+
+đặt b = trave5() // Lúc này, b sẽ bằng 5
 ```
 
 `Các lệnh xuất-nhập:` Để xuất một giá trị ra màn hình, ta dùng lệnh `viết`. Để nhập một giá trị bằng bàn phím, ta dùng lệnh `nhập`
