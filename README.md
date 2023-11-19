@@ -25,6 +25,22 @@ Sau đây là một ví dụ cho việc sử dụng khối lệnh điều kiện
 ```js
 // Khối lệnh `nếu` đơn giản
 nếu dieukien1 làm
+  // Các khối lệnh khác của bạn ở đây
+hết
 
+// Khối lệnh `nếu-còn không`
+nếu dieukien1 làm
+  // Các khối lệnh của bạn nếu dieukien1 là đúng ở đây
+hết còn không làm
+  // Các khối lệnh của bạn nếu dieukien1 là sai ở đây
+hết
+
+// Khối lệnh `nếu-còn không nếu-còn không`
+nếu dieukien1 làm
+  // Các khối lệnh của bạn nếu dieukien1 là đúng ở đây
+hết còn không nếu dieukien2 làm
+  // Các khối lệnh của bạn nếu dieukien1 sai, dieukien2 đúng ở đây
+hết còn không làm
+  // Các khối lệnh của bạn nếu dieukien1, dieukien2 là sai ở đây
 hết
 ```
