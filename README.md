@@ -1,5 +1,5 @@
-# VNScript
-### Ngôn ngữ lập trình của người Việt, dành cho người Việt!
+<h1 align='center'>VNScript</h1>
+<h3 align='center'>Ngôn ngữ lập trình của người Việt, dành cho người Việt!</h3>
 
 <hr/>
 
