@@ -128,3 +128,24 @@ khi a != 10 làm
   a = a + 1
 hết
 ```
+
+`Các lệnh thử, bắt lỗi:` Để thử, bắt lỗi VNScript có các cú pháp `thử`, `băt lỗi`, `khử lỗi`, `cuối cùng`
+
+Cú pháp `thử` bắt buộc phải đi kèm với cú pháp `bắt lỗi` hoặc `cuối cùng`
+
+```js
+đặt a = 5
+
+thử a + 1 hết
+// Nếu a + 1 xả ra lỗi thì lỗi xảy ra sẽ được lưu trữ vào biến error
+bắt lỗi error làm
+  // In lỗi ra màn hình rồi xóa lỗi để phần mềm tiếp tục chạy
+  viết(error)
+  khử lỗi (error)
+hết
+// Sau khi xử lý cú pháp `thử` và cú pháp `bắt lỗi`, VNScript sẽ xử lí cú pháp `cuối cùng`
+cuối cùng
+  // In a ra màn hình
+  viết(a)
+hết
+```
