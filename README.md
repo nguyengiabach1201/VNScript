@@ -70,6 +70,25 @@ bạn sẽ nhập giá trị b vào máy tính bằng bàn phím
 
 `Khối lệnh điều kiện:` Để biểu diễn cấu trúc nếu-thì trong VNScript, ta dùng cú pháp `nếu`,`còn không`,`làm`,`hết`
 
+Ta kiểm tra điều kiện bằng các dấu `==`, `!=`, `>`, `<`, `<=`, `>=`
+```js
+a == b  sẽ trả về đúng khi a bằng b
+a != b  sẽ trả về đúng khi a không bằng b
+a > b  sẽ trả về đúng khi a lớn hơn b
+a < b  sẽ trả về đúng khi a nhỏ hơn b
+a >= b  sẽ trả về đúng khi a lớn hơn hoặc bằng b
+a <= b  sẽ trả về đúng khi a nhỏ hơn hoặc bằng b
+```
+
+Khi kiểm tra các điều kiện, ta có thể dùng cú pháp `và`, `hoặc`, `đúng`, `sai`
+
+```js
+đặt a = đúng, b = sai
+
+viết (a == đúng và b == đúng) // sẽ in sai
+viết (a == đúng hoặc b == đúng) // sẽ in đúng
+```
+
 Sau đây là một ví dụ cho việc sử dụng khối lệnh điều kiện
 ```js
 // Khối lệnh `nếu` đơn giản
@@ -94,21 +113,4 @@ hết còn không làm
 hết
 ```
 
-Ta kiểm tra điều kiện bằng các dấu `==`, `!=`, `>`, `<`, `<=`, `>=`
-```js
-a == b  sẽ trả về đúng khi a bằng b
-a != b  sẽ trả về đúng khi a không bằng b
-a > b  sẽ trả về đúng khi a lớn hơn b
-a < b  sẽ trả về đúng khi a nhỏ hơn b
-a >= b  sẽ trả về đúng khi a lớn hơn hoặc bằng b
-a <= b  sẽ trả về đúng khi a nhỏ hơn hoặc bằng b
-```
 
-Khi kiểm tra các điều kiện, ta có thể dùng cú pháp `và`, `hoặc`, `đúng`, `sai`
-
-```js
-đặt a = đúng, b = sai
-
-viết (a == đúng và b == đúng) // sẽ in sai
-viết (a == đúng hoặc b == đúng) // sẽ in đúng
-```
