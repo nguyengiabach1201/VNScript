@@ -2,22 +2,16 @@
 <h3 align='center'>Ngôn ngữ lập trình của người Việt, dành cho người Việt!</h3>
 
 <hr/>
-\subsection{Biến, hằng và lệnh gán}
+## Biến, hằng và lệnh gán
 
-$\>\>\>\>\>$ Biến và hằng trong VNScript được tạo ra khi thực hiện lệnh gán. Cú pháp của lệnh gán như sau: 
+Biến và hằng trong VNScript được tạo ra khi thực hiện lệnh gán. Cú pháp của lệnh gán như sau: 
 
-\begin{equation*}
-\begin{tabular}{ |c| } 
- \hline
- \\
+```
  <biến> = <giá trị> \\
  <hằng> = <giá trị> \\
- \\
- \hline
-\end{tabular}
-\end{equation*}
+```
 
-\hfil
+<br>
 
 Khi thực hiện lệnh gán, <giá trị> bên phải sẽ được gán vào <biến> hoặc <hằng> ở bên trái. Biến trong VNScript không cần khai báo trước kiểu dữ liệu cho biến, hằng.
 
