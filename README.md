@@ -47,44 +47,28 @@ Một số phép toán cơ bản với kiểu kí tự số và kiểu kí tự 
 ### Ví dụ:
 
 ```
-    a = 2**3
-    b = 5\%2
-    c = "Xin" + "Chào"
+a = 2**3
+b = 5\%2
+c = "Xin" + "Chào"
 ```
 
 Lúc này, giá trị của a là 8, của b là 1 và c là "XinChào".
 
-\subsection{Các lệnh vào ra đơn giản}
+## Các lệnh vào ra đơn giản
 
-$\>\>\>\>\>$ Trong VNScript, lệnh viết() có chức năng xuất dữ liệu ra màn hình. Lệnh viết() cho phép in một hoặc nhiều giá trị ra màn hình. Cú pháp của lệnh viết() như sau (với v1, v2,\ldots, vn là các giá trị cần đưa ra màn hình):
+Trong VNScript, lệnh `viết()` có chức năng xuất dữ liệu ra màn hình. Lệnh `viết()` cho phép in một hoặc nhiều giá trị ra màn hình. Cú pháp của lệnh `viết()` như sau (với v1, v2,\ldots, vn là các giá trị cần đưa ra màn hình):
 
-\begin{equation*}
-\begin{tabular}{ |c| } 
- \hline
- \\
- viết(v1, v2, v3,..., vn) \\
- \\
- \hline
-\end{tabular}
-\end{equation*}
+```
+viết(v1, v2, v3,..., vn)
+```
 
-\hfil
+Ví dụ sử dụng lệnh `viết()` để xuất ra màn hình dòng chữ "Xin chào":
 
-Ví dụ sử dụng lệnh viết() để xuất ra màn hình dòng chữ "Xin chào":
+```
+ viết("Xin chào")
+```
 
-\begin{equation*}
-\begin{tabular}{ |c| } 
- \hline
- \\
- viết("Xin chào") \\
- \\
- \hline
-\end{tabular}
-\end{equation*}
-
-\hfil
-
-Để nhập dữ liệu vào chương trình bằng bàn phím, ta có thể dùng lệnh nhập(). Lệnh nhập sẽ trả về giá trị người dùng đã nhập dưới dạng số, logic, dữ liệu mảng hoặc dữ liệu kí tự. Cấu trúc chung của lệnh nhập() như sau:
+Để nhập dữ liệu vào chương trình bằng bàn phím, ta có thể dùng lệnh `nhập()`. Lệnh `nhập()` sẽ trả về giá trị người dùng đã nhập dưới dạng `số`, `logic`, `dữ liệu mảng` hoặc `dữ liệu kí tự`. Cấu trúc chung của lệnh `nhập()` như sau:
 
 \begin{equation*}
 \begin{tabular}{ |c| } 
