@@ -2,6 +2,7 @@
 <h3 align='center'>Ngôn ngữ lập trình của người Việt, dành cho người Việt!</h3>
 
 <hr/>
+
 ## Biến, hằng và lệnh gán
 
 Biến và hằng trong VNScript được tạo ra khi thực hiện lệnh gán. Cú pháp của lệnh gán như sau: 
