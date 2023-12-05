@@ -40,26 +40,17 @@ Chương trình trên sẽ gặp lỗi vì a là một hằng và giá trị `a`
 ## Các phép toán trên một số kiểu dữ liệu cơ bản
 
 Một số phép toán cơ bản với kiểu kí tự số và kiểu kí tự xâu:
-\begin{itemize}
-    \item Kiểu dữ liệu số: +, -, *, /, \% (chia lấy dư), ** (nâng lên lũy thừa)
-    \item Kiểu dữ liệu xâu: + (nối xâu)
-\end{itemize}
 
-Ví dụ:
+- **Kiểu dữ liệu số:** `+, -, *, /, \% (chia lấy dư), **` (nâng lên lũy thừa)
+- **Kiểu dữ liệu xâu:** `+` (nối xâu)
 
-\begin{equation*}
-\begin{tabular}{ |c| } 
- \hline
- \\
-    a = 2**3 \quad\quad\quad\quad\quad\quad \\
-    b = 5\%2 \quad\quad\quad\quad\quad\quad \\
-    c = "Xin" + "Chào" \\
- \\
- \hline
-\end{tabular}
-\end{equation*}
+### Ví dụ:
 
-\hfil
+```
+    a = 2**3
+    b = 5\%2
+    c = "Xin" + "Chào"
+```
 
 Lúc này, giá trị của a là 8, của b là 1 và c là "XinChào".
 
