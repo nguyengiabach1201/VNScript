@@ -65,44 +65,26 @@ viết(v1, v2, v3,..., vn)
 Ví dụ sử dụng lệnh `viết()` để xuất ra màn hình dòng chữ "Xin chào":
 
 ```
- viết("Xin chào")
+viết("Xin chào")
 ```
 
 Để nhập dữ liệu vào chương trình bằng bàn phím, ta có thể dùng lệnh `nhập()`. Lệnh `nhập()` sẽ trả về giá trị người dùng đã nhập dưới dạng `số`, `logic`, `dữ liệu mảng` hoặc `dữ liệu kí tự`. Cấu trúc chung của lệnh `nhập()` như sau:
 
-\begin{equation*}
-\begin{tabular}{ |c| } 
- \hline
- \\
- <biến hoặc hằng> = nhập(<Văn bản hiển thị trong hộp thoại>) \\
- \\
- \hline
-\end{tabular}
-\end{equation*}
+```
+<biến hoặc hằng> = nhập(<Văn bản hiển thị trong hộp thoại>)
+```
 
-\hfil
+### Ví dụ:
 
-Ví dụ:
-
-\begin{equation*}
-\begin{tabular}{ |c| } 
- \hline
- \\
- a = nhập("Hãy nhập giá trị a:") \\
- \\
- \hline
-\end{tabular}
-\end{equation*}
-
-\hfil
+```
+a = nhập("Hãy nhập giá trị a:")
+```
 
 Khi đó, chưởng trình sẽ hiện lên một cửa sổ với dòng chữ "Hãy nhập giá trị a:" kèm theo một ô để nhập giá trị.
 
-\subsection{Cấu trúc rẽ nhánh}
+## Cấu trúc rẽ nhánh
 
-$\>\>\>\>\>$ Trong VNScript, biểu thức logic là biểu thức chỉ nhận giá trị đúng (true) hoặc sai (false).
-
-\hfil
+Trong VNScript, biểu thức logic là biểu thức chỉ nhận giá trị đúng (true) hoặc sai (false).
 
 Các phép so sáng giá trị số trong VNScript:
 
@@ -116,9 +98,7 @@ Các phép so sáng giá trị số trong VNScript:
 \end{tabular}
 \end{equation*}
 
-\hfil
-
-Các phép toán của kiểu dữ liệu logic bao gồm phép `và', `hoặc' và `không'. Bảng các phép toán logic như sau: 
+Các phép toán của kiểu dữ liệu logic bao gồm phép `và`, `hoặc` và `không`. Bảng các phép toán logic như sau: 
 
 \hfil
 
@@ -157,9 +137,7 @@ sai & đúng \\ \hline
 \\ \\ \\
 \end{minipage}
 
-\hfil
-
-Ví dụ:
+### Ví dụ:
 
 \begin{equation*}
 \begin{tabular}{ |c| } 
