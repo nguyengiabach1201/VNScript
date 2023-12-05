@@ -31,15 +31,13 @@ Trong ví dụ ở trên, `x`, `y`, `z`, `t` là các biến và trong đó:
 Trài ngược với biến, có thể thay đổi giá trị trong quá trình thực hiện chương trình thì hằng là giá trị bất biến từ đầu đến cuối chương trình.
 
 ```
-    hằng a = 5
-    a = 6
+hằng a = 5
+a = 6
 ```
 
-\hfil
+Chương trình trên sẽ gặp lỗi vì a là một hằng và giá trị `a` đã được khởi tạo bằng `5` nên không thể chuyển thành `6` và chương trình sẽ báo lỗi.
 
-Chương trình trên sẽ gặp lỗi vì a là một hằng và giá trị a đã được khởi tạo bằng 5 nên không thể chuyển thành 6 và chương trình sẽ báo lỗi.
-
-\subsection{Các phép toán trên một số kiểu dữ liệu cơ bản}
+## Các phép toán trên một số kiểu dữ liệu cơ bản
 
 Một số phép toán cơ bản với kiểu kí tự số và kiểu kí tự xâu:
 \begin{itemize}
