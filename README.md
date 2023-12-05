@@ -12,34 +12,21 @@ Biến và hằng trong VNScript được tạo ra khi thực hiện lệnh gán
  <hằng> = <giá trị> \\
 ```
 
-<br>
+Khi thực hiện lệnh gán, `<giá trị>` bên phải sẽ được gán vào `<biến>` hoặc `<hằng>` ở bên trái. Biến trong VNScript không cần khai báo trước kiểu dữ liệu cho biến, hằng.
 
-Khi thực hiện lệnh gán, <giá trị> bên phải sẽ được gán vào <biến> hoặc <hằng> ở bên trái. Biến trong VNScript không cần khai báo trước kiểu dữ liệu cho biến, hằng.
-
-\begin{equation*}
-\begin{tabular}{ |c| } 
- \hline
- \\
+```
     x = 5 \quad\quad\quad\quad\quad\quad\quad\quad\quad \\
     y = đúng \quad\quad\quad\quad\quad\quad\quad \\
     z = "Xin chào" \quad\quad\quad\quad\quad \\
     t = [12, sai, "Tạm biệt"] \\
- \\
- \hline
-\end{tabular}
-\end{equation*}
+```
 
-\hfil
+Trong ví dụ ở trên, `x`, `y`, `z`, `t` là các biến và trong đó: 
 
-Trong ví dụ ở trên, x, y, z, t là các biến và trong đó: 
-\begin{itemize}
-  \item x có kiểu dữ liệu số
-  \item y có kiểu dữ liệu logic
-  \item z có kiểu dữ liệu xâu
-  \item t có kiểu dũ liệu mảng
-\end{itemize}
-
-\hfil
+- x có kiểu dữ liệu số
+- y có kiểu dữ liệu logic
+- z có kiểu dữ liệu xâu
+- t có kiểu dũ liệu mảng
 
 Trài ngược với biến, có thể thay đổi giá trị trong quá trình thực hiện chương trình thì hằng là giá trị bất biến từ đầu đến cuối chương trình.
 
