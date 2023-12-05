@@ -8,17 +8,17 @@
 Biến và hằng trong VNScript được tạo ra khi thực hiện lệnh gán. Cú pháp của lệnh gán như sau: 
 
 ```
- <biến> = <giá trị> \\
- <hằng> = <giá trị> \\
+<biến> = <giá trị>
+<hằng> = <giá trị>
 ```
 
 Khi thực hiện lệnh gán, `<giá trị>` bên phải sẽ được gán vào `<biến>` hoặc `<hằng>` ở bên trái. Biến trong VNScript không cần khai báo trước kiểu dữ liệu cho biến, hằng.
 
 ```
-    x = 5 \quad\quad\quad\quad\quad\quad\quad\quad\quad \\
-    y = đúng \quad\quad\quad\quad\quad\quad\quad \\
-    z = "Xin chào" \quad\quad\quad\quad\quad \\
-    t = [12, sai, "Tạm biệt"] \\
+x = 5
+y = đúng
+z = "Xin chào"
+t = [12, sai, "Tạm biệt"]
 ```
 
 Trong ví dụ ở trên, `x`, `y`, `z`, `t` là các biến và trong đó: 
@@ -30,16 +30,10 @@ Trong ví dụ ở trên, `x`, `y`, `z`, `t` là các biến và trong đó:
 
 Trài ngược với biến, có thể thay đổi giá trị trong quá trình thực hiện chương trình thì hằng là giá trị bất biến từ đầu đến cuối chương trình.
 
-\begin{equation*}
-\begin{tabular}{ |c| } 
- \hline
- \\
-    hằng a = 5 \\
-    a = 6 \quad\quad\quad \\
- \\
- \hline
-\end{tabular}
-\end{equation*}
+```
+    hằng a = 5
+    a = 6
+```
 
 \hfil
 
