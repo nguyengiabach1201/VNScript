@@ -2,169 +2,537 @@
 <h3 align='center'>Ngôn ngữ lập trình của người Việt, dành cho người Việt!</h3>
 
 <hr/>
+\subsection{Biến, hằng và lệnh gán}
 
-## Sơ lược
-### Mô tả
-VNScript là một ngôn ngữ lập trịnh dựa trên JavaScript, được thiết kế để dễ học và sử dụng, giúp bạn có thể bắt đầu lập trình ngay lập tức mà không cần phải lo lắng về những khái niệm phức tạp!
+$\>\>\>\>\>$ Biến và hằng trong VNScript được tạo ra khi thực hiện lệnh gán. Cú pháp của lệnh gán như sau: 
 
-### Cú pháp
-Cú pháp của VNScript tương tự như JavaScript, nhưng có một số điểm khác biệt nhỏ để phù hợp với tiếng Việt. Ví dụ, VNScript sử dụng các từ khóa tiếng Việt, các ký tự Unicode và các dấu câu tiếng Việt.
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ <biến> = <giá trị> \\
+ <hằng> = <giá trị> \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
 
-### Ứng dụng
-VNScript có thể được sử dụng để phát triển nhiều loại ứng dụng, bao gồm:
-- **Ứng dụng web:** VNScript có thể được sử dụng để phát triển các ứng dụng web tương tác, chẳng hạn như trò chơi, ứng dụng quản lý và ứng dụng thương mại điện tử.
-- **Ứng dụng di động:** VNScript có thể được sử dụng để phát triển các ứng dụng di động cho các nền tảng Android và iOS khi đi kèm với framework React Native.
-- **Ứng dụng máy tính:** VNScript, kết hợp với React, VueJs, Astro, ... có thể được sử dụng để phát triển các ứng dụng máy tính cho các hệ điều hành Windows, macOS và Linux.
+\hfil
 
-## Hướng dẫn sử dụng
-VNScript hỗ trợ nhiều tính năng vô cùng đồ sộ và sau đây là cú pháp, cách sử dụng VNScript:
+Khi thực hiện lệnh gán, <giá trị> bên phải sẽ được gán vào <biến> hoặc <hằng> ở bên trái. Biến trong VNScript không cần khai báo trước kiểu dữ liệu cho biến, hằng.
 
-`Lệnh khởi tạo:` Để khởi tạo một biến, ta dùng cú pháp `đặt`. Còn để khởi tạo một loại thuật toán, ta dùng cú pháp `thuật toán`
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+    x = 5 \quad\quad\quad\quad\quad\quad\quad\quad\quad \\
+    y = đúng \quad\quad\quad\quad\quad\quad\quad \\
+    z = "Xin chào" \quad\quad\quad\quad\quad \\
+    t = [12, sai, "Tạm biệt"] \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
 
-```js
-// Khởi tạo các biến a, b, c
-đặt a = 5
-đặt b = "Xin chào!"
-đặt c = sai
+\hfil
 
-// Khởi tạo thuật toán `hello` không có bất kì hàm số nào
-thuật toán hello 
-  Các khối lệnh của bạn dành cho thuật toán `hello` ở đây
-hết
+Trong ví dụ ở trên, x, y, z, t là các biến và trong đó: 
+\begin{itemize}
+  \item x có kiểu dữ liệu số
+  \item y có kiểu dữ liệu logic
+  \item z có kiểu dữ liệu xâu
+  \item t có kiểu dũ liệu mảng
+\end{itemize}
 
-// Khởi tạo thuật toán `byebye` có các hàm số
-thuật toán byebye (hàm số 1, hàm số 2,...) 
-  Các khối lệnh của bạn dành cho thuật toán `hello` ở đây
-hết
-```
+\hfil
 
-Để gọi một thuật toán, ta dùng cấu trúc `tên thuật toán + (các tham số nếu có)`
-```js
-đặt b = 0
-thuật toán a
-  b = 5
-hết
+Trài ngược với biến, có thể thay đổi giá trị trong quá trình thực hiện chương trình thì hằng là giá trị bất biến từ đầu đến cuối chương trình.
 
-a() // lúc này, b = 5
-```
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+    hằng a = 5 \\
+    a = 6 \quad\quad\quad \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
 
-Trong một thuật toán, để trả về giá trị từ một thuật toán, ta dùng lệnh `trả về`
+\hfil
 
-```js
-thuật toán trave5
-  trả về 5
-hết
+Chương trình trên sẽ gặp lỗi vì a là một hằng và giá trị a đã được khởi tạo bằng 5 nên không thể chuyển thành 6 và chương trình sẽ báo lỗi.
 
-đặt b = trave5() // Lúc này, b sẽ bằng 5
-```
+\subsection{Các phép toán trên một số kiểu dữ liệu cơ bản}
 
-`Các lệnh xuất-nhập:` Để xuất một giá trị ra màn hình, ta dùng lệnh `viết`. Để nhập một giá trị bằng bàn phím, ta dùng lệnh `nhập`
+Một số phép toán cơ bản với kiểu kí tự số và kiểu kí tự xâu:
+\begin{itemize}
+    \item Kiểu dữ liệu số: +, -, *, /, \% (chia lấy dư), ** (nâng lên lũy thừa)
+    \item Kiểu dữ liệu xâu: + (nối xâu)
+\end{itemize}
 
-```js
-đặt a = 'Chào bạn!'
-viết (a) // Câu lệnh này sẽ viết `Chào bạn!` ra màn hình
+Ví dụ:
 
-đặt b = nhập()
-bạn sẽ nhập giá trị b vào máy tính bằng bàn phím
-```
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+    a = 2**3 \quad\quad\quad\quad\quad\quad \\
+    b = 5\%2 \quad\quad\quad\quad\quad\quad \\
+    c = "Xin" + "Chào" \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
 
-`Khối lệnh điều kiện:` Để biểu diễn cấu trúc nếu-thì trong VNScript, ta dùng cú pháp `nếu`,`còn không`
+\hfil
 
-Ta kiểm tra điều kiện bằng các dấu `==`, `!=`, `>`, `<`, `<=`, `>=`
-```js
-a == b  sẽ trả về đúng khi a bằng b
-a != b  sẽ trả về đúng khi a không bằng b
-a > b  sẽ trả về đúng khi a lớn hơn b
-a < b  sẽ trả về đúng khi a nhỏ hơn b
-a >= b  sẽ trả về đúng khi a lớn hơn hoặc bằng b
-a <= b  sẽ trả về đúng khi a nhỏ hơn hoặc bằng b
-```
+Lúc này, giá trị của a là 8, của b là 1 và c là "XinChào".
 
-Khi kiểm tra các điều kiện, ta có thể dùng cú pháp `và`, `hoặc`, `đúng`, `sai`
+\subsection{Các lệnh vào ra đơn giản}
 
-```js
-đặt a = đúng, b = sai
+$\>\>\>\>\>$ Trong VNScript, lệnh viết() có chức năng xuất dữ liệu ra màn hình. Lệnh viết() cho phép in một hoặc nhiều giá trị ra màn hình. Cú pháp của lệnh viết() như sau (với v1, v2,\ldots, vn là các giá trị cần đưa ra màn hình):
 
-viết (a == đúng và b == đúng) // sẽ in sai
-viết (a == đúng hoặc b == đúng) // sẽ in đúng
-```
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ viết(v1, v2, v3,..., vn) \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
 
-Sau đây là một ví dụ cho việc sử dụng khối lệnh điều kiện
-```js
-// Khối lệnh `nếu` đơn giản
-nếu dieukien1 làm
-  // Các khối lệnh khác của bạn ở đây
-hết
+\hfil
 
-// Khối lệnh `nếu-còn không`
-nếu dieukien1 làm
-  // Các khối lệnh của bạn nếu dieukien1 là đúng ở đây
-hết còn không làm
-  // Các khối lệnh của bạn nếu dieukien1 là sai ở đây
-hết
+Ví dụ sử dụng lệnh viết() để xuất ra màn hình dòng chữ "Xin chào":
 
-// Khối lệnh `nếu-còn không nếu-còn không`
-nếu dieukien1 làm
-  // Các khối lệnh của bạn nếu dieukien1 là đúng ở đây
-hết còn không nếu dieukien2 làm
-  // Các khối lệnh của bạn nếu dieukien1 sai, dieukien2 đúng ở đây
-hết còn không làm
-  // Các khối lệnh của bạn nếu dieukien1, dieukien2 là sai ở đây
-hết
-```
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ viết("Xin chào") \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
 
-`Khối lệnh chuyển:` Thay cho việc sử dụng nhiều cú pháp `nếu-thì`, ta có thể sử dụng cú pháp `chuyển`, 'trường hợp', 'mặc định'
+\hfil
 
-```js
-đặt chuỗi = 'hi'
+Để nhập dữ liệu vào chương trình bằng bàn phím, ta có thể dùng lệnh nhập(). Lệnh nhập sẽ trả về giá trị người dùng đã nhập dưới dạng số, logic, dữ liệu mảng hoặc dữ liệu kí tự. Cấu trúc chung của lệnh nhập() như sau:
 
-chuyển chuỗi làm
-  // Nếu chuỗi bằng 'hi' thì viết `chào` rồi thoát khỏi cú pháp `chuyển`
-  trường hợp 'hi':
-    viết('chào')
-    thoát
-  // Nếu chuỗi bằng 'bye' thì viết `tạm biệt` rồi thoát khỏi cú pháp `chuyển`
-  trường hợp 'bye':
-    viết('tạm biệt')
-    thoát
-  // Nếu chuỗi không bằng 'hi' mà cũng không bằng 'bye' thì thoát khỏi cú pháp chuyển
-  mặc định: thoát
-hết
-```
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ <biến hoặc hằng> = nhập(<Văn bản hiển thị trong hộp thoại>) \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
 
-`Khối lệnh lặp:` Ta có thể dùng các cú pháp `với` hoặc `khi` để biểu diễn khối lệnh lặp
+\hfil
 
-```js
-// Khối lệnh này sẽ in ra các giá trị từ 0 đến 9
-với i = 0; i < 10; i = i + 1 làm
-  viết (i)
-hết
+Ví dụ:
 
-//Khối lệnh này sẽ in ra các giá trị từ 5 đến 7
-đặt a = 5
-khi a != 10 làm
-  viết(a)
-  a = a + 1
-hết
-```
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ a = nhập("Hãy nhập giá trị a:") \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
 
-`Các lệnh thử, bắt lỗi:` Để thử, bắt lỗi VNScript có các cú pháp `thử`, `băt lỗi`, `khử lỗi`, `cuối cùng`
+\hfil
 
-Cú pháp `thử` bắt buộc phải đi kèm với cú pháp `bắt lỗi` hoặc `cuối cùng`
+Khi đó, chưởng trình sẽ hiện lên một cửa sổ với dòng chữ "Hãy nhập giá trị a:" kèm theo một ô để nhập giá trị.
 
-```js
-đặt a = 5
+\subsection{Cấu trúc rẽ nhánh}
 
-thử a + 1 hết
-// Nếu a + 1 xả ra lỗi thì lỗi xảy ra sẽ được lưu trữ vào biến error
-bắt lỗi error làm
-  // In lỗi ra màn hình rồi xóa lỗi để phần mềm tiếp tục chạy
-  viết(error)
-  khử lỗi (error)
-hết
-// Sau khi xử lý cú pháp `thử` và cú pháp `bắt lỗi`, VNScript sẽ xử lí cú pháp `cuối cùng`
-cuối cùng
-  // In a ra màn hình
-  viết(a)
-hết
-```
+$\>\>\>\>\>$ Trong VNScript, biểu thức logic là biểu thức chỉ nhận giá trị đúng (true) hoặc sai (false).
+
+\hfil
+
+Các phép so sáng giá trị số trong VNScript:
+
+\begin{equation*}
+\begin{tabular}{ |c|c|c|c|c|c| } 
+ \hline
+ < & nhỏ hơn & > & lớn hơn & == & bằng nhau \\
+ \hline
+ <= & nhỏ hơn hoặc bằng & >= & lớn hơn hoặc bằng & != & khác nhau\\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+Các phép toán của kiểu dữ liệu logic bao gồm phép `và', `hoặc' và `không'. Bảng các phép toán logic như sau: 
+
+\hfil
+
+\begin{minipage}{0.3\textwidth}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{Phép toán và} \\ \hline
+X & Y & X và Y \\ \hline
+đúng & đúng & đúng \\ \hline
+đúng & sai & sai \\ \hline
+sai & đúng & sai \\ \hline
+sai & sai & sai \\ \hline
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{Phép toán hoặc} \\ \hline
+X & Y & X và Y \\ \hline
+đúng & đúng & đúng \\ \hline
+đúng & sai & đúng \\ \hline
+sai & đúng & đúng \\ \hline
+sai & sai & sai \\ \hline
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{Phép toán không} \\ \hline
+X & không phải X \\ \hline
+đúng & sai \\ \hline
+sai & đúng \\ \hline
+\end{tabular}
+\\ \\ \\
+\end{minipage}
+
+\hfil
+
+Ví dụ:
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ x = 10; y = 5; z = 9 \quad\quad \\
+ a = x < 11 và z > 5 \quad\quad \\
+ b = x > 15 hoặc y < 9 \\
+ c = không phải a \quad\quad\quad \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+Ta có x = 10, z = 9 do đó x < 11 là đúng, z > 5 là đúng. Theo bảng toán `và' thì a = x < 11 và z > 5 nhận giá trị đúng.
+
+Ta lại có x > 15 sai ( vì x = 10) nhưng y < 9 đúng (vì y = 5). Theo bảng toán `hoặc' suy ra b = x > 15 hoặc y < 9 nhận giá trị đúng.
+
+Vì b đúng nên c = không phải b sẽ nhận giá trị sai.
+
+\hfil
+
+Để xử lí các tình huống rẽ nhánh, VNScript cũng có câu lệnh để mô tả cấu trúc rẽ nhánh:
+
+\hfil
+
+\textit{Câu lệnh rẽ nhánh dạng thiếu:}
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ nếu <điều kiện> làm \\
+    <khối lệnh> \quad\quad\quad \\
+ hết \quad\quad\quad\quad\quad\quad\quad\quad\quad \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+VNScript sẽ kiểm tra <điều kiện> nếu đúng thì thực hiện <khối lệnh>, ngược lại thì bỏ qua chuyển sang lệnh tiếp theo sau lệnh nếu.
+
+\hfil
+
+\textit{Câu lệnh rẽ nhánh dạng đủ:}
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ nếu <điều kiện> làm \\
+    <khối lệnh 1> \quad\quad \\
+ còn không làm \quad\quad\quad\quad \\
+    <khối lệnh 2> \quad\quad \\
+ hết \quad\quad\quad\quad\quad\quad\quad\quad\quad \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+Nếu <điều kiện> đúng thì VNScript sẽ thực hiện <khối lệnh 1>, ngược lại thì thực hiện <khối lệnh 2>.
+
+\hfil
+
+Ví dụ:
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ a = nhập() \quad\quad\quad\quad\quad\quad\quad\quad \\
+ b = nhập() \quad\quad\quad\quad\quad\quad\quad\quad \\
+ \\
+ nếu a == 5 làm \quad\quad\quad\quad\quad\quad \\
+    viết("a bằng 5") \quad\quad\quad\quad \\
+ hết \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad \\
+ \\
+ nếu a > b làm \quad\quad\quad\quad\quad\quad\quad \\
+    viết("a lớn hơn b") \quad\quad\quad \\
+ còn không làm \quad\quad\quad\quad\quad\quad\quad \\
+    viết("a không lớn hơn b") \\
+ hết \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+Ở ví dụ trên, người dùng sẽ nhập vào hai giá trị a, b bằng bàn phím. Nếu a bằng 5 thì sẽ xuất ra màn hình dòng chữ "a bằng 5". Tiếp theo, chương trình sẽ so sánh a với b. Nếu a lớn hơn b thì xuất ra màn hình "a lớn hơn b" còn không thì xuất ra "a không lớn hơn b".
+
+\subsection{Câu lệnh lặp với}
+
+$\>\>\>\>\>$ Cú pháp của lệnh lặp với số lần biết trước trong VNScript như sau:
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ với <biểu thức 1> ; <biểu thức 2> ; <biểu thức 3> làm\\
+    <khối lệnh> \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad \\
+ hết \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+Trong đó: 
+
+\begin{itemize}
+\item <biểu thức 1> sẽ được thực hiện một lần trước khi thực thi khối lệnh lặp với
+\item <biểu thức 2> sẽ được thực hiện mỗi tại lần lặp để xác định còn tiếp tục khối lệnh được hay không
+\item <biểu thức 3> sẽ được thực hiện sau mỗi lần lặp
+\end{itemize}
+
+Ví dụ:
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ với i = 0 ; i < 5 ; i = i + 1 làm\\
+    viết (i) \quad\quad\quad\quad\quad\quad\quad\quad\quad \\
+ hết \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+Ở ví dụ trên, chương trình sẽ viết ra màn hình các số từ 1 đến 4.
+
+\subsection{Câu lệnh lặp khi}
+
+$\>\>\>\>\>$ Câu lệnh lặp khi sẽ thực hiện khối lệnh với số lần lặp không biết trước. Khối lệnh lặp này sẽ được thực thi cho đến khi <điều kiện> = sai. 
+
+\hfil
+
+Cú pháp của câu lệnh lặp khi như sau:
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ khi <điều kiện> làm\\
+    <khối lệnh> \quad\quad\quad \\
+ hết \quad\quad\quad\quad\quad\quad\quad\quad\quad \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+Ví dụ:
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ a = 0 \quad\quad\quad\quad\quad \\
+ khi a > -15 làm\\
+    viết(a) \quad \\
+    a = a - 1 \\
+ hết \quad\quad\quad\quad\quad\quad \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+Khối lệnh trên sẽ xuất ra màn hình các giá trị a từ 0 trở về -15.
+
+\subsection{Kiểu liệu danh sách}
+
+$\>\>\>\>\>$ Kiểu dữ liệu danh sách trong VNScript được khởi tạo như sau (trong đó v1, v2,\ldots,vn là các giá trị của danh sách):
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ <tên danh sách> = [v1, v2,\ldots,vn] \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+Để duyệt qua các phần tử của kiểu dữ liệu danh sách, ta có cú pháp: 
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ <tên danh sách> [ <vị trí của hạng tử trong dãy> ] \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+\textbf{Chú ý:} Vị trí của kiểu dữ liệu dãy sẽ bắt đầu từ vị trí 0.
+
+\hfil
+
+Ví dụ:
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ danhsach = [1,2,5,4,3] \quad\quad\quad\quad \\
+ viết(danhsach[0], danhsach[2])\\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+Trong ví dụ trên, chương trình sẽ xuất ra màn hình phần tử ở vị trí 0 và thứ 2 của dãy là 1 và 5.
+
+\hfil
+
+Một số lệnh làm việc với danh sách:
+\begin{itemize}
+    \item dài(<danh sách>) dùng để tính độ dài của <danh sách>
+    \item <danh sách>.thêm(<giá trị>) dùng để thêm <giá trị> vào cuối <danh sách>
+    \item <danh sách>.bỏ() dùng xóa giá trị cuối cùng của <danh sách>
+\end{itemize}
+
+\subsection{Hàm trong VNScript}
+
+$\>\>\>\>\>$ Ngoài các hàm được thiết kế sẵn, VNScript còn cho phép người dùng tự thiết lập các hàm tự định nghĩa (các hàm của riêng mình).
+
+\hfil
+
+\textit{Cách viết hàm có trả lại giá trị:}
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ thuật toán <tên hàm> () \quad\quad\quad\quad \\
+ <khối lệnh> \quad\quad \\
+ trả về <giá trị> \\
+ hết \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+\textit{Cách viết hàm không trả lại giá trị:}
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ thuật toán <tên hàm> () \quad\quad\quad\quad \\
+ <khối lệnh> \quad\quad \\
+ hết \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+Để gọi cách hàm tự định nghĩa, ta dùng cú pháp như sau:
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ <tên hàm>()\\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+Hoặc nếu hàm có các tham số: 
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ <tên hàm>(<tham số 1>, <tham số 2>,\ldots,<tham số n>)\\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+Ví dụ:
+
+\begin{equation*}
+\begin{tabular}{ |c| } 
+ \hline
+ \\
+ hàm inten(ten) \quad\quad\quad\quad\quad\quad\quad\quad \\
+ viết ("Xin chào" + ten) \quad\quad \\
+ hết \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad \\
+ \\
+ \hline
+\end{tabular}
+\end{equation*}
+
+\hfil
+
+Trong ví dụ trên, hàm inten() sẽ yêu cầu người dùng nhập tên và viết "Xin chào" kèm theo tên đã nhập.
